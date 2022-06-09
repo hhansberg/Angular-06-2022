@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'yes';
+  title = 'veebipood';
+programmiKeel = localStorage.getItem("keel");
+
+valiKeel(uusKeel: string){
+  localStorage.setItem("keel", uusKeel);
+  this.programmiKeel= uusKeel;
 }
+
+
+  }
+

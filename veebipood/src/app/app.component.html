@@ -2,6 +2,14 @@
 <br><br>
 <div>tekst</div>
 <div>tekst2</div>
+<div>Lehe keel: {{programmiKeel}}</div>
+<button (click)="valiKeel('EE')">Eesti keel</button>
+<button (click)="valiKeel('EN')">Inglise keel</button>
+<button>Inglise keel</button>
+<button>Vene keel</button>
+<br>
 <button routerLink="/">AVALEHELE</button>
 <button routerLink="/ostukorv">OSTUKORVI</button>
+<button routerLink="/poed">Poed</button>
+<button routerLink="/lisa-toode">lisa-toode</button>
 <router-outlet></router-outlet>
