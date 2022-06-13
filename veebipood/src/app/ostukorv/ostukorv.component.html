@@ -1,1 +1,17 @@
-<p>ostukorv works!</p>
+<br><br>
+<div *ngIf="ostukorvitooted.length === 0">ostukorv on tühi</div>
+<button *ngIf="ostukorvitooted.length > 0"> (click)="tyhjenda()">tühjenda</button>
+
+<div *ngFor="let t of ostukorvitooted">
+    {{ t }}
+    <button (click)="lisaostukorvi(t)">+</button>
+    <button (click)="eemaldaostukorvist(t)">x</button>
+</div>
+
+
+<div>coca cola</div>
+<div>fanta</div>
+<div>sprite</div>
+<div>pepsi</div>
+<div>cola</div>
+

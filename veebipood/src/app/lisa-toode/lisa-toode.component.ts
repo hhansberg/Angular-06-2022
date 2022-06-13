@@ -23,6 +23,14 @@ export class LisaToodeComponent implements OnInit {
     if (lsTooted !==null) {
      tooted = JSON.parse(lsTooted);
     }
+ 
+  
+    // selle lõigu lõpuks ontooted muutuja sees kas:
+    // [] ---> kui ei ole midagi local storages
+    // või
+    // ["coca cola", "fanta", "sprite"] ---> võetakse local storagest
+
+  
     tooted.push(this.uusToode);
     localStorage.setItem("tooted", JSON.stringify(tooted));
   }

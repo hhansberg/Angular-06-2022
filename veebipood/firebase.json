@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "angularhansberg2022",
+    "public": "dist/veebipood",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
